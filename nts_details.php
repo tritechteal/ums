@@ -45,97 +45,31 @@ if( isset( $_POST['sign_up'] ) )
 
 
         </div>
-        <div class="row">
-
-            <div class="col-md-8">
-
+        <div class="col-md-6">
                 <form class="signup" action="#" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
+                    <div>
+                        NTS Details
                     </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Father Name">
-                        <div class="row">
-                        </div>
-                        <br>
-                        <div class="form-inline">
+                    <hr>
 
-                            <div class="col-md-4"><label>DoB:</label></div>
-                            <div class="col-md-8"><input type="date" class="form-control" placeholder="DOB"></div>
-
-                        </div>
+                    <div class="form-inline">
+                        <div class="col-md-12"><label>Test</label></div>
                         <br>
-                        <div class="form-inline">
-                            <div class="col-md-4"><label>Gender:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="gender">Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Others</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="form-inline">
-                            <div class="col-md-4"><label >Citizen:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="city">Select Your City</option>
-                                    <option value="isb">islamabad</option>
-                                    <option value="rwp">rawalpindi</option>
-                                    <option value="jhelum">jhelum</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-inline">
-                            <div class="col-md-4"><label >Domicile:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="city">Select Domicile</option>
-                                    <option value="isb">AJK</option>
-                                    <option value="rwp">FATA</option>
-                                    <option value="jhelum">Islamabad</option>
-                                    <option value="jhelum">Panjab</option>
-                                    <option value="jhelum">Sindh</option>
-                                    <option value="jhelum">Gilgit Baltistan</option>
-                                    <option value="jhelum">Khayber Pakhton Khawa</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-inline">
-
-                            <div class="col-md-4"><label >CNIC:</label></div>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control"   placeholder="XXXXX-XXXXXXX-X"  name="cnic" required="" >
-                            </div>
-
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Please accept the terms and conditions to proceed with your request.
-                                </label>
-                            </div>
+                        <div class="col-md-12">
+                            <input type="radio" class="form-control" name="test" value="NTS"> NTS
+                            <input type="radio" class="form-control" name="test" value="Uni_test"> Uni Test
                         </div>
                     </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-success "  value="SUBMIT">
-                    </div>
-                </form>
+                    <br>
+            <div class="form-group">
+                <input type="submit" class="btn btn-success "  value="Save and Move Next">
             </div>
-            <div class="col-md-4">sub dic of 2</div>
+            </form>
 
         </div>
+        <div class="col-md-3">test 3</div>
 
     </div>
-    <div class="col-md-3">test 3</div>
-
-</div>
 </div>
 </body>
 </html>

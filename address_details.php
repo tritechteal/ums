@@ -142,24 +142,13 @@ if( isset( $_POST['sign_up'] ) )
                             <input type="text" class="form-control" placeholder="">
                         </div>
                     </div>
-            <p align="right">Enter Your Father or guardian mobile no. here.</p>
+            <p align="right">Enter Your Father or guardian mobile no. here</p>
                     <br>
-                    <div class="form-group">
-                        <div class="checkbox">
-                            <label>
-                                <input type="checkbox"> Please accept the terms and conditions to proceed with your request.
-                            </label>
-                        </div>
-                    </div>
             </div>
             <div class="form-group">
-                <input type="submit" class="btn btn-success "  value="SUBMIT">
+                <input type="submit" class="btn btn-success "  value="Save and Move Next">
             </div>
             </form>
-        </div>
-        <div class="col-md-4">sub dic of 2</div>
-
-    </div>
 
 </div>
 <div class="col-md-3">test 3</div>

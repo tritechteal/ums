@@ -7,23 +7,22 @@
 include 'connection.php';
 $db_conn = new db_connection();
 session_start();
-if( isset( $_POST['sign_up'] ) )
+if( isset( $_POST['personel_info'] ) )
 {
 
-    $first_name = $_POST['first_name'];
-    $last_name = $_POST['last_name'];
-    $campus = $_POST['campus'];
-    $password = $_POST['password'];
+    $full_name = $_POST['full_name'];
+    $father_name = $_POST['father_name'];
+    $dob = $_POST['date'];
     $gender = $_POST['gender'];
-    $email = $_POST['email'];
-    $phone = $_POST['phone'];
-    $program = $_POST['program'];
+    $citizen = $_POST['citizen'];
+    $d_city = $_POST['d_city'];
+    $cnic = $_POST['cnic'];
 
-    $qurey="INSERT INTO `sign_up` (first_name,last_name,campus,password,gender,email,phone,program) 
-    VALUES('$first_name','$last_name','$campus','$password','$gender','$email','$phone','$program')";
+    $qurey="INSERT INTO `personel_info` (full_name,father_name,date,gender,citizen,d_city,cnic) 
+    VALUES('$full_name','$father_name','$dob','$gender','$citizen','$d_city','$cnic')";
     $result = $db_conn->insertData($qurey);
-    //var_dump($first_name, $last_name, $campus, $password, $gender, $email, $phone, $program);
-    //();
+   var_dump($full_name, $father_name, $dob, $gender, $citizen, $d_city, $cnic);
+
 }
 ?>
 <html>
@@ -51,41 +50,41 @@ if( isset( $_POST['sign_up'] ) )
 
                  <form class="signup" action="#" method="post">
                      <div class="form-group">
-                         <input type="text" class="form-control" placeholder="Name">
+                         <input type="text" class="form-control" placeholder="Name" name="full_name">
                      </div>
                      <div class="form-group">
-                         <input type="email" class="form-control" placeholder="Father Name">
+                         <input type="text" class="form-control" placeholder="Father Name" name="father_name">
                          <div class="row">
                      </div>
                          <br>
                      <div class="form-inline">
 
                          <div class="col-md-4"><label>DoB:</label></div>
-                         <div class="col-md-8"><input type="date" class="form-control" placeholder="DOB"></div>
+                         <div class="col-md-8"><input type="date" class="form-control" placeholder="DOB" name="date"></div>
 
                      </div>
                          <br>
                      <div class="form-inline">
                          <div class="col-md-4"><label>Gender:</label></div>
                          <div class="col-md-8">
-                         <select class="form-control">
+                         <select class="form-control" name="gender">
                              <option value="gender">Select Gender</option>
-                             <option value="male">Male</option>
-                             <option value="female">Female</option>
-                             <option value="other">Others</option>
+                             <option value="male" name="male">Male</option>
+                             <option value="female" name="female">Female</option>
+                             <option value="other" name="other">Others</option>
                          </select>
                          </div>
                      </div>
                          <br>
 
                          <div class="form-inline">
-                             <div class="col-md-4"><label >Citizen:</label></div>
+                             <div class="col-md-4" name="citizen"><label >Citizen:</label></div>
                              <div class="col-md-8">
-                                 <select class="form-control">
+                                 <select class="form-control" name="citizen">
                                      <option value="city">Select Your City</option>
-                                     <option value="isb">islamabad</option>
-                                     <option value="rwp">rawalpindi</option>
-                                     <option value="jhelum">jhelum</option>
+                                     <option value="isb" name="islamabad">islamabad</option>
+                                     <option value="rwp" name="rawalpindi">rawalpindi</option>
+                                     <option value="jhelum" name="jhelum">jhelum</option>
                                  </select>
                              </div>
                          </div>
@@ -93,15 +92,15 @@ if( isset( $_POST['sign_up'] ) )
                          <div class="form-inline">
                              <div class="col-md-4"><label >Domicile:</label></div>
                              <div class="col-md-8">
-                                 <select class="form-control">
-                                     <option value="city">Select Domicile</option>
-                                     <option value="isb">AJK</option>
-                                     <option value="rwp">FATA</option>
-                                     <option value="jhelum">Islamabad</option>
-                                     <option value="jhelum">Panjab</option>
-                                     <option value="jhelum">Sindh</option>
-                                     <option value="jhelum">Gilgit Baltistan</option>
-                                     <option value="jhelum">Khayber Pakhton Khawa</option>
+                                 <select class="form-control" name="d_city"  >
+                                     <option value="city" name="">Select Domicile</option>
+                                     <option value="ajk" name="ajk">AJK</option>
+                                     <option value="fata" name="fata">FATA</option>
+                                     <option value="isb" name="isb">Islamabad</option>
+                                     <option value="panjab" name="panjab">Panjab</option>
+                                     <option value="sindh" name="sindh">Sindh</option>
+                                     <option value="gilgit" name="gilgit">Gilgit Baltistan</option>
+                                     <option value="kpk" name="kpk">Khayber Pakhton Khawa</option>
                                  </select>
                              </div>
                          </div>
@@ -115,16 +114,9 @@ if( isset( $_POST['sign_up'] ) )
 
                          </div>
                          <br>
-                     <div class="form-group">
-                         <div class="checkbox">
-                             <label>
-                                 <input type="checkbox"> Please accept the terms and conditions to proceed with your request.
-                             </label>
-                         </div>
-                     </div>
                      </div>
                      <div class="form-group">
-                         <input type="submit" class="btn btn-success "  value="SUBMIT">
+                         <input type="submit" class="btn btn-success " name="personel_info"  id="personel_info" value="Save and Move Next">
                      </div>
                  </form>
              </div>

@@ -42,98 +42,108 @@ if( isset( $_POST['sign_up'] ) )
                 <li><a href="change-password.html" class="list-group-item"><i class="fa fa-angle-double-right"></i> Change Password</a> </li>
                 <li><a href="logout.html" class="list-group-item"><i class="fa fa-angle-double-right"></i> Log Out</a> </li>
             </ul>
-
-
         </div>
-        <div class="row">
+<div class="col-md-6">
 
-            <div class="col-md-8">
-
-                <form class="signup" action="#" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Father Name">
-                        <div class="row">
-                        </div>
-                        <br>
-                        <div class="form-inline">
-
-                            <div class="col-md-4"><label>DoB:</label></div>
-                            <div class="col-md-8"><input type="date" class="form-control" placeholder="DOB"></div>
-
-                        </div>
-                        <br>
-                        <div class="form-inline">
-                            <div class="col-md-4"><label>Gender:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="gender">Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Others</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="form-inline">
-                            <div class="col-md-4"><label >Citizen:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="city">Select Your City</option>
-                                    <option value="isb">islamabad</option>
-                                    <option value="rwp">rawalpindi</option>
-                                    <option value="jhelum">jhelum</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-inline">
-                            <div class="col-md-4"><label >Domicile:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="city">Select Domicile</option>
-                                    <option value="isb">AJK</option>
-                                    <option value="rwp">FATA</option>
-                                    <option value="jhelum">Islamabad</option>
-                                    <option value="jhelum">Panjab</option>
-                                    <option value="jhelum">Sindh</option>
-                                    <option value="jhelum">Gilgit Baltistan</option>
-                                    <option value="jhelum">Khayber Pakhton Khawa</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-inline">
-
-                            <div class="col-md-4"><label >CNIC:</label></div>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control"   placeholder="XXXXX-XXXXXXX-X"  name="cnic" required="" >
-                            </div>
-
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Please accept the terms and conditions to proceed with your request.
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-success "  value="SUBMIT">
-                    </div>
-                </form>
+    <div class="row">
+        <form class="signup" action="#" method="post">
+            <div>
+                Programes
             </div>
-            <div class="col-md-4">sub dic of 2</div>
+            <hr>
 
-        </div>
-
+            <div class="form-inline">
+                <div class="col-md-5"><label >Program Choice 1:</label></div>
+                <div class="col-md-7">
+                    <select class="form-control">
+                        <option value="city">Select Program Choice 1</option>
+                        <option value="bscs">BSCS</option>
+                        <option value="bsse">BSSE</option>
+                        <option value="bsit">BSIT</option>
+                        <option value="bstn">BSTN</option>
+                        <option value="bs_eng">BS ENG</option>
+                        <option value="bs_fashion">BS Fashion Designing</option>
+                        <option value="e_mechanical">BEEE(Mechanical)</option>
+                        <option value="e_electrical">BEEE(Electrical)</option>
+                        <option value="e_civil">BEEE(Civil)</option>
+                        <option value="pharm_d">Pharm D</option>
+                        <option value="dpt">DPT</option>
+                        <option value="bs_mlt">BS(MLT)</option>
+                        <option value="bs_psychology">BS Psychology</option>
+                        <option value="bcom">B com.</option>
+                        <option value="bba">BBA</option>
+                        <option value="b_civil">B.tech(Civil)</option>
+                        <option value="b_electrical">B.tech(Electrical)</option>
+                        <option value="b_mechanical">B.tech(Mechanical)</option>
+                        <option value="nutrition">BS Human Nutrition and Dietics</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-inline">
+                <div class="col-md-5"><label >Program Choice 2:</label></div>
+                <div class="col-md-7">
+                    <select class="form-control">
+                        <option value="city">Select Program Choice 2</option>
+                        <option value="bscs">BSCS</option>
+                        <option value="bsse">BSSE</option>
+                        <option value="bsit">BSIT</option>
+                        <option value="bstn">BSTN</option>
+                        <option value="bs_eng">BS ENG</option>
+                        <option value="bs_fashion">BS Fashion Designing</option>
+                        <option value="e_mechanical">BEEE(Mechanical)</option>
+                        <option value="e_electrical">BEEE(Electrical)</option>
+                        <option value="e_civil">BEEE(Civil)</option>
+                        <option value="pharm_d">Pharm D</option>
+                        <option value="dpt">DPT</option>
+                        <option value="bs_mlt">BS(MLT)</option>
+                        <option value="bs_psychology">BS Psychology</option>
+                        <option value="bcom">B com.</option>
+                        <option value="bba">BBA</option>
+                        <option value="b_civil">B.tech(Civil)</option>
+                        <option value="b_electrical">B.tech(Electrical)</option>
+                        <option value="b_mechanical">B.tech(Mechanical)</option>
+                        <option value="nutrition">BS Human Nutrition and Dietics</option>
+                    </select>
+                </div>
+            </div>
+            <br>
+            <div class="form-inline">
+                <div class="col-md-5"><label >Program Choice 3:</label></div>
+                <div class="col-md-7">
+                    <select class="form-control">
+                        <option value="city">Select Program Choice 3</option>
+                        <option value="bscs">BSCS</option>
+                        <option value="bsse">BSSE</option>
+                        <option value="bsit">BSIT</option>
+                        <option value="bstn">BSTN</option>
+                        <option value="bs_eng">BS ENG</option>
+                        <option value="bs_fashion">BS Fashion Designing</option>
+                        <option value="e_mechanical">BEEE(Mechanical)</option>
+                        <option value="e_electrical">BEEE(Electrical)</option>
+                        <option value="e_civil">BEEE(Civil)</option>
+                        <option value="pharm_d">Pharm D</option>
+                        <option value="dpt">DPT</option>
+                        <option value="bs_mlt">BS(MLT)</option>
+                        <option value="bs_psychology">BS Psychology</option>
+                        <option value="bcom">B com.</option>
+                        <option value="bba">BBA</option>
+                        <option value="b_civil">B.tech(Civil)</option>
+                        <option value="b_electrical">B.tech(Electrical)</option>
+                        <option value="b_mechanical">B.tech(Mechanical)</option>
+                        <option value="nutrition">BS Human Nutrition and Dietics</option>
+                    </select>
+                </div>
+            </div>
+            <br>
     </div>
-    <div class="col-md-3">test 3</div>
+    <div class="form-group">
+        <input type="submit" class="btn btn-success "  value="Save and Move Next">
+    </div>
+    </form>
+
+</div>
+<div class="col-md-3">test 3</div>
 
 </div>
 </div>
