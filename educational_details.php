@@ -2,6 +2,9 @@
 <link rel="stylesheet" href="sign_up.css">
 <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
 <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 <!------ Include the above in your HEAD tag ---------->
 <?php
 include 'connection.php';
@@ -30,7 +33,7 @@ if( isset( $_POST['sign_up'] ) )
 <body>
 
 <div class="container" style="margin-top: 10px">
-    <div class="row">
+    <body class="row">
         <div class="col-md-3">
             <ul class="list-unstyled">
                 <li><a href="personal_information.php" class="list-group-item  bg-active"><i class="fa fa-angle-double-right"></i> Personal Information <span class="badge"></span> </a></li>
@@ -44,98 +47,203 @@ if( isset( $_POST['sign_up'] ) )
             </ul>
 
 
-        </div>
-        <div class="row">
+            <div class="col-md-3">
+            <button  data-toggle="modal" data-target="#myModal">test button</button>
 
-            <div class="col-md-8">
-
-                <form class="signup" action="#" method="post">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Father Name">
-                        <div class="row">
-                        </div>
-                        <br>
-                        <div class="form-inline">
-
-                            <div class="col-md-4"><label>DoB:</label></div>
-                            <div class="col-md-8"><input type="date" class="form-control" placeholder="DOB"></div>
-
-                        </div>
-                        <br>
-                        <div class="form-inline">
-                            <div class="col-md-4"><label>Gender:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="gender">Select Gender</option>
-                                    <option value="male">Male</option>
-                                    <option value="female">Female</option>
-                                    <option value="other">Others</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-
-                        <div class="form-inline">
-                            <div class="col-md-4"><label >Citizen:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="city">Select Your City</option>
-                                    <option value="isb">islamabad</option>
-                                    <option value="rwp">rawalpindi</option>
-                                    <option value="jhelum">jhelum</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-inline">
-                            <div class="col-md-4"><label >Domicile:</label></div>
-                            <div class="col-md-8">
-                                <select class="form-control">
-                                    <option value="city">Select Domicile</option>
-                                    <option value="isb">AJK</option>
-                                    <option value="rwp">FATA</option>
-                                    <option value="jhelum">Islamabad</option>
-                                    <option value="jhelum">Panjab</option>
-                                    <option value="jhelum">Sindh</option>
-                                    <option value="jhelum">Gilgit Baltistan</option>
-                                    <option value="jhelum">Khayber Pakhton Khawa</option>
-                                </select>
-                            </div>
-                        </div>
-                        <br>
-                        <div class="form-inline">
-
-                            <div class="col-md-4"><label >CNIC:</label></div>
-                            <div class="col-md-8">
-                                <input type="text" class="form-control"   placeholder="XXXXX-XXXXXXX-X"  name="cnic" required="" >
-                            </div>
-
-                        </div>
-                        <br>
-                        <div class="form-group">
-                            <div class="checkbox">
-                                <label>
-                                    <input type="checkbox"> Please accept the terms and conditions to proceed with your request.
-                                </label>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" class="btn btn-success "  value="SUBMIT">
-                    </div>
-                </form>
             </div>
-            <div class="col-md-4">sub dic of 2</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
         </div>
+        <div class="modal fade" id="myModal" role="dialog" style="display: none;">
+            < div class="modal-dialog">
 
-    </div>
-    <div class="col-md-3">test 3</div>
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header" id="forgetinfo"><b id="fgcol">Matric / O - Level</b>
+                    <button type="button" class="close" data-dismiss="modal">×</button>
 
-</div>
-</div>
-</body>
+                </div>
+                <div class="modal-body">
+
+
+
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span class="asterisk_input"></span>Degree:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control input-sm" name="mtrdeg" size="1" required="">
+                                <option value="">Select Degree</option>
+                                <option value="Matric">Matric</option>
+                                <option value="O-Level">O-Level</option>
+                            </select>
+                            <span style="color:red;"></span>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span class="asterisk_input"></span>Year of Passing:</label>
+                        <div class="col-sm-4">
+                            <select class="form-control input-sm" name="mtryr" size="1" required="">
+                                <option value="">----</option>
+
+                                <option value="2025">2025</option>
+                                <option value="2024">2024</option>
+                                <option value="2023">2023</option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                                <option value="2018">2018</option>
+                                <option value="2017">2017</option>
+                                <option value="2016">2016</option>
+                                <option value="2015">2015</option>
+                                <option value="2014">2014</option>
+                                <option value="2013">2013</option>
+                                <option value="2012">2012</option>
+                                <option value="2011">2011</option>
+                                <option value="2010">2010</option>
+                                <option value="2009">2009</option>
+                                <option value="2008">2008</option>
+                                <option value="2007">2007</option>
+                                <option value="2006">2006</option>
+                                <option value="2005">2005</option>
+                                <option value="2004">2004</option>
+                                <option value="2003">2003</option>
+                                <option value="2002">2002</option>
+                                <option value="2001">2001</option>
+                                <option value="2000">2000</option>
+                                <option value="1999">1999</option>
+                                <option value="1998">1998</option>
+                                <option value="1997">1997</option>
+                                <option value="1996">1996</option>
+                                <option value="1995">1995</option>
+                                <option value="1994">1994</option>
+                                <option value="1993">1993</option>
+                                <option value="1992">1992</option>
+                                <option value="1991">1991</option>
+                                <option value="1990">1990</option>
+                            </select>
+                            <span style="color:red;"></span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span class="asterisk_input"></span>Board:</label>
+                        <div class="col-sm-8">
+                            <select class="form-control input-sm" name="mtrbod" size="1" required="">
+                                <option value="">Select Board</option>
+                                <option value="AIOU Islamabad">AIOU Islamabad</option>
+                                <option value="IBCC Islamabad">IBCC Islamabad</option>
+                                <option value="FBISE Islamabad">FBISE Islamabad</option>
+                                <option value="BISE Bahawalpur">BISE Bahawalpur</option>
+                                <option value="BISE DG Khan">BISE DG Khan</option>
+                                <option value="BISE Faisalabad">BISE Faisalabad</option>
+                                <option value="BISE Gujranwala">BISE Gujranwala</option>
+                                <option value="BISE Lahore">BISE Lahore</option>
+                                <option value="BISE Multan">BISE Multan</option>
+                                <option value="BISE Rawalpindi">BISE Rawalpindi</option>
+                                <option value="BISE Sahiwal">BISE Sahiwal</option>
+                                <option value="BISE Sargodha">BISE Sargodha</option>
+                                <option value="BISE Abbottabad">BISE Abbottabad</option>
+                                <option value="BISE Bannu">BISE Bannu</option>
+                                <option value="BISE Dera Ismail Khan">BISE Dera Ismail Khan</option>
+                                <option value="BISE Kohat">BISE Kohat</option>
+                                <option value="BISE Malakand">BISE Malakand</option>
+                                <option value="BISE Mardan">BISE Mardan</option>
+                                <option value="BISE Peshawar">BISE Peshawar</option>
+                                <option value="BISE Swat">BISE Swat</option>
+                                <option value="BISE Karachi">BISE Karachi</option>
+                                <option value="BISE Hyderabad">BISE Hyderabad</option>
+                                <option value="BISE Larkana">BISE Larkana</option>
+                                <option value="BISE Sukkur">BISE Sukkur</option>
+                                <option value="BISE Mirpur">BISE Mirpur</option>
+                                <option value="BISE Quetta">BISE Quetta</option>
+                                <option value="BISE Turbat">BISE Turbat</option>
+                                <option value="BISE Zhob">BISE Zhob</option>
+                                <option value="Aga Khan Educational Board, Karachi">Aga Khan Educational Board, Karachi</option>
+                                <option value="KPK Board of Technical Education, Peshawar">KPK Board of Technical Education, Peshawar</option>
+                                <option value="Punjab Board of Technical Education, Lahore">Punjab Board of Technical Education, Lahore</option>
+                                <option value="Sindh Board of Technical Education, Karachi">Sindh Board of Technical Education, Karachi</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span style="color:red;"></span>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span class="asterisk_input"></span>Subjects:</label>
+                        <div class="col-sm-6">
+                            <select class="form-control input-sm" name="mtrsub" size="1" required="">
+                                <option value="">Select Subject</option>
+                                <option value="Science">Science</option>
+                                <option value="Arts">Arts</option>
+                                <option value="General Science">General Science</option>
+                                <option value="Other">Other</option>
+                            </select>
+                            <span style="color:red;"></span>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span class="asterisk_input"></span>Total Marks:</label>
+                        <div class="col-sm-3">
+                            <input type="text" name="mtrtono" size="1" class="form-control input-sm" maxlength="4" value="" required="">
+                            <span style="color:red;"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-3 control-label"><span class="asterisk_input"></span>Obtained Marks:</label>
+                        <div class="col-sm-3">
+                            <input type="text" name="mtrobno" size="1" class="form-control input-sm" maxlength="4" value="" required="">
+                            <span style="color:#ff86c1;"></span>
+                            <span style="color:red;"></span>
+                        </div>
+                    </div>
+
+
+
+                    <hr>
+
+
+                    <button style="text-align: right" id="sty" type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                    <button style="text-align: right" id="sty" class="btn btn-primary" name="submit1" type="submit" value="matric">Save</button>
+                    <br>
+                    <br>
+                    <br>
+
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+    </body>
 </html>
